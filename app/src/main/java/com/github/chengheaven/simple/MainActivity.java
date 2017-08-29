@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
             sidebarView.setItemUnSelectedTextColor(getResources().getColor(R.color.colorCC));
 
             // Sidebar 方向
-            sidebarView.orientationIsVertical();
+//            sidebarView.orientationIsVertical();
 
             // Sidebar 横向的高度 或者 竖向 item 的宽高
             sidebarView.setSidebarWidth(100);
