@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sidebar_elevation">8dp</dimen>
+    <dimen name="sidebar_height">56dp</dimen>
+    <dimen name="sidebar_icon">24dp</dimen>
+    <dimen name="sidebar_line_width">1dp</dimen>
+    <dimen name="sidebar_max_width">168dp</dimen>
+    <dimen name="sidebar_min_width">104dp</dimen>
+    <dimen name="sidebar_padding_bottom">7dp</dimen>
+    <dimen name="sidebar_padding_left">12dp</dimen>
+    <dimen name="sidebar_padding_right">12dp</dimen>
+    <dimen name="sidebar_shadow_height">8dp</dimen>
+    <dimen name="sidebar_shadow_height_without_colored_background">4dp</dimen>
+    <dimen name="sidebar_text_size_selected">12sp</dimen>
+    <dimen name="sidebar_text_size_unselected">12sp</dimen>
+
+</resources>

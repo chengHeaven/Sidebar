@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sidebar</string>
+
+    <declare-styleable name="SidebarView">
+        <attr name="sidebar_with_text" format="boolean" />
+        <attr name="sidebar_shadow" format="boolean" />
+        <attr name="sidebar_tablet" format="boolean" />
+        <attr name="sidebar_colored_background" format="boolean" />
+        <attr name="sidebar_viewpager_slide" format="boolean" />
+        <attr name="sidebar_selected_text_size" format="dimension" />
+        <attr name="sidebar_unselected_text_size" format="dimension" />
+        <attr name="sidebar_selected_color" format="color" />
+    </declare-styleable>
+</resources>
