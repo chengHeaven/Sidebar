@@ -68,9 +68,9 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
             sidebarView.setDefaultSelectItemOfIndex(-1);
 
             // 点击 item 是否改变 Sidebar 的背景颜色
-            sidebarView.isClickChangeBackgroundColor(false);
+            sidebarView.isClickChangeBackgroundColor(true);
 
-            // Sidebar 背景颜色, 当 显示动画效果且 index >= 0 时, 失效
+            // Sidebar 背景颜色, 当 显示动画效果且 isClickChangeBackgroundColor 为true 时, 无效
             sidebarView.setBaseBackgroundColor(getResources().getColor(R.color.colorPink));
 
             // 选中 item 的颜色
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
             sidebarView.setSidebarWidth(100);
 
             // 点击 item 是否有动画效果
-            sidebarView.isAnimator(false);
+            sidebarView.isAnimator(true);
 
             // 点击事件响应已选中 Item
             sidebarView.isSelectedItemClick(true);

@@ -76,11 +76,11 @@ Sidebar 在左侧
     
 </code>
 
-![](https://github.com/chengHeaven/Sidebar/raw/master/images/3.gif)         ![](https://github.com/chengHeaven/Sidebar/raw/master/images/3-1.gif)
+![](https://github.com/chengHeaven/Sidebar/raw/master/images/3.gif)         ![](https://github.com/chengHeaven/Sidebar/raw/master/images/3-1.gif) ![](https://github.com/chengHeaven/Sidebar/raw/master/images/3-2.gif)
 
 将 orientation 的方向改为 vertical , 则 Sidebar 在上方
 
-![](https://github.com/chengHeaven/Sidebar/raw/master/images/2.gif)         ![](https://github.com/chengHeaven/Sidebar/raw/master/images/2-1.gif)
+![](https://github.com/chengHeaven/Sidebar/raw/master/images/2.gif)         ![](https://github.com/chengHeaven/Sidebar/raw/master/images/2-1.gif) ![](https://github.com/chengHeaven/Sidebar/raw/master/images/2-2.gif)
         
 Sidebar 在下方布局
 
@@ -107,4 +107,4 @@ Sidebar 在下方布局
     
 </code>
 
-![](https://github.com/chengHeaven/Sidebar/raw/master/images/1.gif)         ![](https://github.com/chengHeaven/Sidebar/raw/master/images/1-1.gif)
+![](https://github.com/chengHeaven/Sidebar/raw/master/images/1.gif)         ![](https://github.com/chengHeaven/Sidebar/raw/master/images/1-1.gif) ![](https://github.com/chengHeaven/Sidebar/raw/master/images/1-2.gif)

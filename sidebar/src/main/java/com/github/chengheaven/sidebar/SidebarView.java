@@ -201,7 +201,9 @@ public class SidebarView extends RelativeLayout {
         items.setOrientation(isOrientation ? LinearLayout.VERTICAL : LinearLayout.HORIZONTAL);
         LayoutParams shadowParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, mShadowHeight);
 
-        if (!isClickChangeBackgroundColor) items.setBackgroundColor(mBaseBackgroundColor);
+        if (!isClickChangeBackgroundColor){
+            items.setBackgroundColor(mBaseBackgroundColor);
+        }
 
         if (isOrientation) {
             line.setBackgroundColor(ContextCompat.getColor(mContext, R.color.colorGray));
@@ -233,8 +235,10 @@ public class SidebarView extends RelativeLayout {
         containerParams.addRule(isOrientation ? RelativeLayout.ALIGN_PARENT_LEFT : RelativeLayout.ALIGN_PARENT_BOTTOM);
         addView(shadow, shadowParams);
         addView(mContainer, containerParams);
-        if (isClickChangeBackgroundColor) {
+        if (!isClickChangeBackgroundColor) {
             mContainer.setBackgroundColor(mBaseBackgroundColor);
+        } else {
+            mContainer.setBackgroundColor(mSidebarList.get(0).getColor());
         }
         mContainer.addView(items, params);
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
