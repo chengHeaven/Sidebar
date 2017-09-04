@@ -101,6 +101,9 @@ public class SidebarView extends RelativeLayout {
 
     private int mAnimatorPadding = 30;
 
+    private float mReduce = 0.9f;
+    private float mAmplify = 1.1f;
+
     public SidebarView(Context context) {
         this(context, null);
     }
@@ -305,8 +308,8 @@ public class SidebarView extends RelativeLayout {
                 if (i == mCurrentItem) {
                     mContainer.setBackgroundColor(mSidebarList.get(index).getColor());
                     title.setTextColor(isItemSelectedTextColor ? mItemSelectedTextColor : mItemSelectedColor);
-                    icon.setScaleX((float) 1.1);
-                    icon.setScaleY((float) 1.1);
+                    icon.setScaleX(mAmplify);
+                    icon.setScaleY(mAmplify);
 
                     if (isOrientation) {
                         SidebarUtils.changeRightPadding(view, getPaddingRight() + mAnimatorPadding, getPaddingRight() - mAnimatorPadding);
@@ -379,8 +382,8 @@ public class SidebarView extends RelativeLayout {
 
                     icon.animate()
                             .setDuration(150)
-                            .scaleX((float) 0.9)
-                            .scaleY((float) 0.9)
+                            .scaleX(mReduce)
+                            .scaleY(mReduce)
                             .start();
                 }
             } else {
@@ -408,8 +411,8 @@ public class SidebarView extends RelativeLayout {
 
                     icon.animate()
                             .setDuration(150)
-                            .scaleX((float) 1.1)
-                            .scaleY((float) 1.1)
+                            .scaleX(mAmplify)
+                            .scaleY(mAmplify)
                             .start();
                 } else {
                     title.setTextColor(isItemSelectedTextColor ? mItemSelectedTextColor : mItemUnSelectedColor);
@@ -678,6 +681,14 @@ public class SidebarView extends RelativeLayout {
      */
     public void setAnimatorPadding(int animatorPadding) {
         this.mAnimatorPadding = animatorPadding;
+    }
+
+    public void setReduce(float reduce) {
+        mReduce = reduce;
+    }
+
+    public void setAmplify(float amplify) {
+        mAmplify = amplify;
     }
 
     /**
